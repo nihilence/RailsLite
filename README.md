@@ -7,18 +7,24 @@
 - [X] redirect_to populates response status and location
 - [X] render creates filepath to a template, i.e.'/views/cats_controller/show.html.erb'
 - [X] render creates ERB instance with filepath, evaluates by binding local variables
+
 ### Session method and hash
+
 - [X] session method in controller base allows insertion into session hash
 - [X] session parses request cookie into session hash if it exists, else
     the session hash is an empty hash
 - [X] session has store_session method which populates response cookie with session hash
 - [X] render and redirect_to methods overridden to store the session
+
 ### Params method and hash
+
 - [X] params instance created in controller on initialization
 - [X] params hash populated with route parameters, as well as decoded request body
     and query string
 - [X] params returns values as strings
+
 ### Router and routes
+
 - [X] route objects have attributes such as the controller they are associated with,
     the http method they use, the regex url pattern to match and the controller
     action it takes
