@@ -18,7 +18,7 @@ module Phase4
       @hash[key] = val
     end
 
-    # serialize the hash into json and save in a cooki
+    # serialize the hash into json and save in a cookie
     # add to the responses cookies
     def store_session(res)
       res.cookies << WEBrick::Cookie.new('_rails_lite_app', @hash.to_json)
